@@ -7,7 +7,7 @@ import { useRef } from 'react';
 
 function Main() {
     const heightVar = '88vh'
-    const paddingVar = '70vh'
+    const paddingVar = '70%'
     // parallex components
     const ref = useRef()
     return (
