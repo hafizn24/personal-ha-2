@@ -6,7 +6,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import { useRef } from 'react';
 
 function Main() {
-    const heightVar = '92vh'
+    const heightVar = '88vh'
     // parallex components
     const ref = useRef()
     return (
