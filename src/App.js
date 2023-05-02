@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+import { createTheme, ThemeProvider, CssBaseline } from '@mui/material';
+import Main from './Components/Main';
 import './App.css';
 
 function App() {
+  // mui components
+  const font = "'Libre Franklin', sans-serif"
+  const fontTheme = createTheme({
+    palette: {
+      mode: 'dark',
+    },
+    typography: {
+      fontFamily: font,
+    },
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={fontTheme}>
+      <CssBaseline enableColorScheme />
+      <Main />
+    </ThemeProvider>
   );
 }
 
